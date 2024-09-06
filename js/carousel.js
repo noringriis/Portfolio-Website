@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageFolder = 'images/carousels/hero/';
     const imagePrefix = 'image';
     const imageExtension = '.jpg';
-    const numberOfImages = 10; // Set this to the number of images in your folder
+    const numberOfImages = 7; // Set this to the number of images in your folder
 
     // Function to create carousel items
     function createCarouselItems() {
@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize carousel
     new bootstrap.Carousel(document.getElementById('heroCarousel'), {
-        interval: 3000, // Change slide every 3 seconds
-        wrap: true // Continuously loop
+        interval: 2000, // Change image every 2 seconds
+        wrap: true, // Continuously loop
+        pause: false, // Don't pause on hover
+        ride: 'carousel', // Start cycling automatically
+        touch: false // Disable swiping on touch devices
     });
 });
