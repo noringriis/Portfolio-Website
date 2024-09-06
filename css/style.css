@@ -1,0 +1,41 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Updated styles for font sizes */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, .lead, .display-4 {
+    font-size: 0.9375rem; /* Approximately 15px */
+}
+
+.small, small {
+    font-size: 0.8125rem; /* Approximately 13px */
+}
+
+/* Updated style for strong tag */
+strong {
+    font-weight: 700; /* This is the bold weight we imported for Inter */
+}
+
+/* You may need to adjust other specific classes used in your HTML */
+
+/* Override Bootstrap's text-muted color */
+.text-muted {
+    color: #888888 !important;
+}
+
+/* Profile picture size */
+.profile-pic {
+    width: 64px;
+    height: 64px;
+}
+
+#heroCarousel .carousel-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+#heroCarousel .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
