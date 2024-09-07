@@ -150,12 +150,110 @@ strong {
 }
 
 .filter-buttons .btn {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    background-color: white !important;
+    border: 1px solid #EAEAEA !important;
+    color: black !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: border-color 800ms ease !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    box-sizing: border-box;
+}
+
+.filter-buttons .btn:hover {
+    border-color: black !important;
+}
+
+.filter-buttons .btn.active {
+    border-color: black !important;
+}
+
+.filter-buttons .btn .count {
+    font-size: 0.8125rem !important;
+    background-color: #EEEEEE !important;
+    border-radius: 4px !important;
+    padding: 2px 4px !important;
+    margin-left: 4px;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: 22px !important;
+    height: 22px !important; /* This ensures a square shape */
+    box-sizing: border-box !important;
 }
 
 #snippets-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem; /* Added this line */
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 0.75rem;
+    overflow: hidden; /* This ensures content doesn't spill out of rounded corners */
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    padding-top: 1rem;
+}
+
+.modal-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+    font-weight: normal; /* To ensure it doesn't look too bold for its size */
+}
+
+.filter-buttons {
+    margin-bottom: 1.5rem;
+}
+
+.filter-buttons .btn {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.filter-buttons .btn .count {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+/* Modal styles with increased specificity */
+.modal-dialog .modal-content {
+    border-radius: 0.75rem !important;
+    overflow: hidden !important;
+}
+
+/* Modal styles */
+.modal-dialog {
+    max-width: 740px !important; /* Set maximum width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.modal-content {
+    border-radius: 0.75rem;
+    overflow: hidden; /* This ensures content doesn't spill out of rounded corners */
+}
+
+.modal-body {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.modal-body-content {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
 }
