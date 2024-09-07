@@ -52,6 +52,7 @@
                 </div>
                 <div class="col-md-8 col-12">
                     <section id="content" class="py-5">
+                        <!-- Work content -->
                         <img src="images/driversnote-cover.jpg" alt="Driversnote Cover" class="img-fluid mb-4">
                         <div class="content-text">
                             <div class="project-header d-flex align-items-center justify-content-between p-3 mb-4" style="background-color: #F9F9F9; border-radius: 12px;">
@@ -70,10 +71,49 @@
             </div>
             <hr class="section-divider">
         </div>
+        <div class="snippets">
+            <div class="row flex-column flex-md-row">
+                <div class="col-md-4 col-12">
+                    <section id="section-title" class="py-5">
+                        <p class="text-muted">Snippets</p>
+                    </section>
+                </div>
+                <div class="col-md-8 col-12">
+                    <section id="content" class="py-5">
+                        <!-- Snippets content -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#snippetsModal" class="view-all-link">View all</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="snippetsModal" tabindex="-1" aria-labelledby="snippetsModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="snippetsModalLabel">All Snippets</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="filter-buttons mb-3">
+                                            <button class="btn btn-outline-primary active" data-filter="all">View All</button>
+                                            <button class="btn btn-outline-primary" data-filter="UI">User Interfaces</button>
+                                            <button class="btn btn-outline-primary" data-filter="GD">Graphic Design</button>
+                                            <button class="btn btn-outline-primary" data-filter="IL">Illustrations</button>
+                                        </div>
+                                        <div id="snippets-container">
+                                            <!-- Images will be dynamically added here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <hr class="section-divider">
+        </div>
     </main>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/snippets.js"></script>
 </body>
 </html>

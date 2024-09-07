@@ -138,3 +138,24 @@ strong {
 }
 
 /* Remove any existing .hero-divider or .work-divider styles */
+
+.view-all-link {
+    color: #009F49;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.filter-buttons .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#snippets-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
