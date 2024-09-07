@@ -78,7 +78,7 @@ strong {
 }
 
 /* Ensure introduction content fits in its column */
-#introduction {
+#content {
     font-size: 0.95em;
 }
 
@@ -91,3 +91,50 @@ strong {
 }
 
 /* Other existing styles */
+
+.current-role {
+    color: #009F49;
+    background-color: #E6FCF0;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-top: 1rem;
+    border-radius: 32px;
+    font-weight: 500;
+}
+
+.status-circle {
+    width: 5px;
+    height: 5px;
+    background-color: #009F49;
+    border: 4px solid #C6F8DD;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+    animation: pulse 3s ease infinite;
+    box-sizing: content-box;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+.section-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid #e9ecef;
+    opacity: 1;
+}
+
+/* Remove any existing .hero-divider or .work-divider styles */
