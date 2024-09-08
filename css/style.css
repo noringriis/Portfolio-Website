@@ -149,111 +149,207 @@ strong {
     text-decoration: underline;
 }
 
-.filter-buttons .btn {
+/* Filter buttons styles */
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filter-buttons .btn,
+.filter-buttons .btn:hover,
+.filter-buttons .btn:focus,
+.filter-buttons .btn:active,
+.filter-buttons .btn.active {
     background-color: white !important;
-    border: 1px solid #EAEAEA !important;
-    color: black !important;
+    border: 2px solid #EAEAEA !important;
+    color: #888888 !important; /* Muted color */
     font-family: 'Inter', sans-serif !important;
     font-weight: 400 !important;
     font-size: 0.9375rem !important;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-    transition: border-color 800ms ease !important;
+    transition: color 0.3s ease, border-color 0.3s ease !important;
     border-radius: 6px !important;
-    padding: 6px 12px !important;
+    padding: 6px 6px 6px 12px !important; /* Top, Right, Bottom, Left */
     box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    outline: none !important;
 }
 
-.filter-buttons .btn:hover {
-    border-color: black !important;
-}
-
+.filter-buttons .btn:hover,
+.filter-buttons .btn:focus,
 .filter-buttons .btn.active {
-    border-color: black !important;
+    color: black !important; /* Full color on hover, focus, and active */
+}
+
+.filter-buttons .btn:focus {
+    box-shadow: none !important;
 }
 
 .filter-buttons .btn .count {
+    float: right;
     font-size: 0.8125rem !important;
     background-color: #EEEEEE !important;
+    color: #888888 !important; /* Muted color */
     border-radius: 4px !important;
-    padding: 2px 4px !important;
+    padding: 2px 8px !important;
     margin-left: 4px;
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-width: 22px !important;
-    height: 22px !important; /* This ensures a square shape */
-    box-sizing: border-box !important;
+    transition: background-color 0.6s ease, color 0.6s ease !important;
 }
 
-#snippets-container img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 0.75rem; /* Added this line */
+.filter-buttons .btn:hover .count,
+.filter-buttons .btn:focus .count,
+.filter-buttons .btn.active .count {
+    background-color: black !important;
+    color: white !important;
 }
 
-/* Modal styles */
-.modal-content {
-    border-radius: 0.75rem;
-    overflow: hidden; /* This ensures content doesn't spill out of rounded corners */
-}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .filter-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-.modal-header {
-    border-bottom: none;
-    padding-bottom: 0;
-}
+    .filter-buttons .btn,
+    .filter-buttons .btn:hover,
+    .filter-buttons .btn:focus,
+    .filter-buttons .btn:active,
+    .filter-buttons .btn.active {
+        width: calc(50% - 4px); /* 50% width minus half of the gap */
+        font-size: 0.875rem !important;
+        padding: 5px 5px 5px 10px !important;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
 
-.modal-body {
-    padding-top: 1rem;
-}
-
-.modal-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9375rem;
-    margin-bottom: 1rem;
-    font-weight: normal; /* To ensure it doesn't look too bold for its size */
-}
-
-.filter-buttons {
-    margin-bottom: 1.5rem;
-}
-
-.filter-buttons .btn {
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.filter-buttons .btn .count {
-    font-size: 0.9em;
-    opacity: 0.7;
-}
-
-/* Modal styles with increased specificity */
-.modal-dialog .modal-content {
-    border-radius: 0.75rem !important;
-    overflow: hidden !important;
+    .filter-buttons .btn:nth-child(2n) {
+        margin-left: 8px; /* Add space between buttons in a row */
+    }
 }
 
 /* Modal styles */
 .modal-dialog {
-    max-width: 740px !important; /* Set maximum width */
-    margin-left: auto !important;
-    margin-right: auto !important;
+    max-width: 780px !important;
+    width: calc(100% - 24px) !important;
+    margin: 12px auto !important;
 }
 
 .modal-content {
-    border-radius: 0.75rem;
-    overflow: hidden; /* This ensures content doesn't spill out of rounded corners */
+    border-radius: 0.75rem !important;
+    overflow: hidden;
+    width: 100% !important;
+    border: none !important;
+    max-height: calc(100vh - 24px);
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-body {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px); /* Adjust this value as needed */
 }
 
-.modal-body-content {
-    max-width: 440px;
+.modal-body #snippets-container img {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* Custom close button styles */
+.custom-close {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #EAEAEA;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 8px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.custom-close svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.custom-close .close-text {
+    position: absolute;
+    left: 28px;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    color: #000000;
+}
+
+.custom-close .close-text.small {
+    font-size: 0.875rem; /* This is typically 14px if the base font size is 16px */
+    line-height: 1.5;
+}
+
+.custom-close:hover {
+    width: 76px;
+}
+
+.custom-close:hover .close-text {
+    opacity: 1;
+}
+
+/* Existing styles for the hero carousel remain unchanged */
+
+/* Styles for the new snippets carousel */
+#snippetsCarousel {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#snippetsCarousel .carousel-item img {
+    border-radius: 0.75rem;
+    width: 100%;
+    height: auto;
+}
+
+#snippetsCarousel .carousel-item {
+    transition: none !important;
+}
+
+#snippetsCarousel.carousel-fade .active.carousel-item-start,
+#snippetsCarousel.carousel-fade .active.carousel-item-end {
+    transition: none;
+}
+
+/* New styles for modal fade */
+.modal.fade .modal-dialog {
+    transition: opacity 0.15s linear;
+    transform: none;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.snippet-image {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.modal-body #snippets-container img {
+    border-radius: 12px !important;
+    overflow: hidden;
 }
