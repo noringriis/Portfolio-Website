@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadSnippets();
+    initializeSnippetsCarousel();
 });
 
 function loadSnippets() {
@@ -126,3 +127,36 @@ function loadSnippets() {
 }
 
 // Any other existing functions in your snippets.js file
+
+function initializeSnippetsCarousel() {
+    const carouselInner = document.querySelector('#snippetsCarousel .carousel-inner');
+    fetch('snippets.json')
+        .then(response => response.json())
+        .then(data => {
+            // Take only the first 5 snippets
+            const firstFiveSnippets = data.slice(0, 5);
+            
+            firstFiveSnippets.forEach((snippet, index) => {
+                const item = document.createElement('div');
+                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                
+                const img = document.createElement('img');
+                img.src = snippet.url;
+                img.className = 'd-block w-100';
+                img.alt = `Snippet image ${index + 1}`;
+                
+                item.appendChild(img);
+                carouselInner.appendChild(item);
+            });
+
+            // Initialize carousel
+            new bootstrap.Carousel(document.getElementById('snippetsCarousel'), {
+                interval: 2000,
+                wrap: true,
+                pause: false,
+                ride: 'carousel',
+                touch: false
+            });
+        })
+        .catch(error => console.error('Error loading snippets for carousel:', error));
+}
