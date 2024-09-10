@@ -354,7 +354,7 @@ strong {
     overflow: hidden;
 }
 
-.project-header {
+.list-item {
     height:80px;
     display: flex;
     align-items: center;
@@ -365,12 +365,32 @@ strong {
     line-height:1.15;
 }
 
-.snippets-count-wrapper {
+.leading-thumbnail {
     width: 3.5rem;  /* 56px */
     height: 3.5rem; /* 56px */
     border-radius: 0.25rem; /* 4px */
-    background-color: #ffffff; /* or any color you prefer */
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.snippets-count-wrapper {
+    background-color: #EAEAEA;
+    padding: 0.125rem 0.5rem; /* 2px top/bottom, 8px left/right */
+    border-radius: 0.25rem; /* 4px, adjust if needed */
+}
+
+.snippets-count {
+    color: #000000;
+    font-size: 0.8125rem !important; /* Approximately 13px */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }

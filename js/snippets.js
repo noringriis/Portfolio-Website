@@ -22,8 +22,6 @@ function loadSnippets() {
                 snippetsCount.textContent = data.length;
             }
             
-            // Rest of your existing code...
-            
             // Count categories
             const categoryCount = new Map();
             categoryCount.set('all', data.length);
@@ -66,6 +64,8 @@ function loadSnippets() {
                 img.dataset.categories = JSON.stringify(snippet.categories);
                 container.appendChild(img);
             });
+            
+            updateFilterCounts();
             
             // Activate "All" button by default
             document.querySelector('.filter-buttons .btn[data-filter="all"]').click();
@@ -129,87 +129,6 @@ function updateFilterCounts() {
     });
 }
 
-// Call updateFilterCounts after loading snippets
-function loadSnippets() {
-    fetch('snippets.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log('Loaded data:', data);
-
-            const container = document.getElementById('snippets-container');
-            const filterButtons = document.querySelector('.filter-buttons');
-            
-            // Clear existing content
-            container.innerHTML = '';
-            filterButtons.innerHTML = '';
-            
-            // Update the snippets count
-            const snippetsCount = document.getElementById('snippetsCount');
-            if (snippetsCount) {
-                snippetsCount.textContent = data.length;
-            }
-            
-            // Rest of your existing code...
-            
-            // Count categories
-            const categoryCount = new Map();
-            categoryCount.set('all', data.length);
-            
-            data.forEach(snippet => {
-                snippet.categories.forEach(category => {
-                    categoryCount.set(category, (categoryCount.get(category) || 0) + 1);
-                });
-            });
-            
-            console.log('Category counts:', Object.fromEntries(categoryCount));
-
-            // Create buttons in the desired order
-            const desiredOrder = ['all', 'User Interfaces', 'Graphic Design', 'Illustrations'];
-            desiredOrder.forEach((category, index) => {
-                if (categoryCount.has(category)) {
-                    const count = categoryCount.get(category);
-                    const button = createFilterButton(category, category === 'all' ? 'All' : category);
-                    button.querySelector('.count').textContent = count;
-                    button.style.order = index; // Set the order using CSS
-                    filterButtons.appendChild(button);
-                    console.log(`Created button for ${category} with count ${count} and order ${index}`);
-                }
-            });
-
-            // Add event listeners to filter buttons
-            document.querySelectorAll('.filter-buttons .btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    filterSnippets(this.getAttribute('data-filter'));
-                    updateActiveButton(this);
-                });
-            });
-            
-            // Load snippets
-            data.forEach(snippet => {
-                const img = document.createElement('img');
-                img.src = snippet.url;
-                img.alt = snippet.categories[0] || 'Snippet Image';
-                img.className = 'img-fluid mb-3';
-                img.dataset.categories = JSON.stringify(snippet.categories);
-                container.appendChild(img);
-            });
-            
-            updateFilterCounts(); // Add this line
-            
-            // Activate "All" button by default
-            document.querySelector('.filter-buttons .btn[data-filter="all"]').click();
-        })
-        .catch(error => console.error('Error loading snippets:', error));
-}
-
-// Update the snippets count in the "View all snippets" button
-const snippetsCount = document.getElementById('snippetsCount');
-if (snippetsCount) {
-    snippetsCount.textContent = data.length;
-}
-
-// Any other existing functions in your snippets.js file
-
 function initializeSnippetsCarousel() {
     const carouselInner = document.querySelector('#snippetsCarousel .carousel-inner');
     fetch('snippets.json')
@@ -241,12 +160,4 @@ function initializeSnippetsCarousel() {
             });
         })
         .catch(error => console.error('Error loading snippets for carousel:', error));
-}
-
-function updateSnippetsCount() {
-    const allButton = document.querySelector('.filter-buttons .btn[data-filter="all"]');
-    const snippetsCount = document.getElementById('snippetsCount');
-    if (allButton && snippetsCount) {
-        snippetsCount.textContent = allButton.querySelector('.count').textContent;
-    }
 }
