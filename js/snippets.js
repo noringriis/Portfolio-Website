@@ -126,6 +126,12 @@ function loadSnippets() {
         .catch(error => console.error('Error loading snippets:', error));
 }
 
+// Update the snippets count in the "View all snippets" button
+const snippetsCount = document.getElementById('snippetsCount');
+if (snippetsCount) {
+    snippetsCount.textContent = data.length;
+}
+
 // Any other existing functions in your snippets.js file
 
 function initializeSnippetsCarousel() {
@@ -159,4 +165,12 @@ function initializeSnippetsCarousel() {
             });
         })
         .catch(error => console.error('Error loading snippets for carousel:', error));
+}
+
+function updateSnippetsCount() {
+    const allButton = document.querySelector('.filter-buttons .btn[data-filter="all"]');
+    const snippetsCount = document.getElementById('snippetsCount');
+    if (allButton && snippetsCount) {
+        snippetsCount.textContent = allButton.querySelector('.count').textContent;
+    }
 }
