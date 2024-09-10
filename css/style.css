@@ -353,3 +353,24 @@ strong {
     border-radius: 12px !important;
     overflow: hidden;
 }
+
+.project-header {
+    height:80px;
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    border-radius: 12px;
+    padding: 0.75rem 1rem 0.75rem 0.75rem;
+    cursor: pointer;
+    line-height:1.15;
+}
+
+.snippets-count-wrapper {
+    width: 3.5rem;  /* 56px */
+    height: 3.5rem; /* 56px */
+    border-radius: 0.25rem; /* 4px */
+    background-color: #ffffff; /* or any color you prefer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
