@@ -291,7 +291,7 @@ strong {
 }
 
 .custom-close .close-text.small {
-    font-size: 0.875rem; /* This is typically 14px if the base font size is 16px */
+    font-size: 0.8125rem;
     line-height: 1.5;
 }
 
@@ -360,14 +360,14 @@ strong {
     align-items: center;
     background-color: #F9F9F9;
     border-radius: 12px;
-    padding: 0.75rem 1rem 0.75rem 0.75rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
     cursor: pointer;
     line-height:1.15;
 }
 
 .leading-thumbnail {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 0.25rem; /* 4px */
     background-color: #F2F2F2;
     display: flex;
@@ -393,4 +393,14 @@ a {
 
 a:hover {
     color: black;
+}
+
+.hover-slide {
+    position: relative;
+    left: 0;
+    transition: left 300ms ease;
+}
+
+.hover-slide:hover {
+    left: 8px;
 }
