@@ -355,7 +355,7 @@ strong {
 }
 
 .list-item {
-    height:80px;
+    height:64px;
     display: flex;
     align-items: center;
     background-color: #F9F9F9;
@@ -366,10 +366,10 @@ strong {
 }
 
 .leading-thumbnail {
-    width: 3.5rem;  /* 56px */
-    height: 3.5rem; /* 56px */
+    width: 40px;
+    height: 40px;
     border-radius: 0.25rem; /* 4px */
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
