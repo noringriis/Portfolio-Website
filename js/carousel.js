@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageFolder = 'images/carousels/hero/';
     const imagePrefix = 'image';
     const imageExtension = '.jpg';
-    const numberOfImages = 6; // Set this to the number of images in your folder
+    const numberOfImages = 6; // Set this to the number of images in your images/carousels/hero/ folder
 
     // Function to create carousel items
     function createCarouselItems() {

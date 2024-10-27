@@ -134,7 +134,7 @@ function initializeSnippetsCarousel() {
     fetch('snippets.json')
         .then(response => response.json())
         .then(data => {
-            // Take only the first 5 snippets
+            // The carousel will display the first 5 snippets in the .json file
             const firstFiveSnippets = data.slice(0, 5);
             
             firstFiveSnippets.forEach((snippet, index) => {
