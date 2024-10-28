@@ -35,7 +35,7 @@ function loadSnippets() {
             console.log('Category counts:', Object.fromEntries(categoryCount));
 
             // Create buttons in the desired order
-            const desiredOrder = ['all', 'User Interfaces', 'Graphic Design', 'Illustrations'];
+            const desiredOrder = ['all', 'User Interfaces', 'Web Design', 'Graphic Design', 'Illustrations'];
             desiredOrder.forEach((category, index) => {
                 if (categoryCount.has(category)) {
                     const count = categoryCount.get(category);

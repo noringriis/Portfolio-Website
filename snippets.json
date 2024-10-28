@@ -1,30 +1,66 @@
 [
   {
-    "url": "images/snippets/illustrations/stratocaster-1.jpg",
-    "categories": ["Illustrations"]
-  },
-  {
-    "url": "images/snippets/user-interfaces/driversnote-1.jpg",
-    "categories": ["User Interfaces"]
-  },
-  {
-    "url": "images/snippets/user-interfaces/tonsser-1.jpg",
-    "categories": ["User Interfaces"]
-  },
-  {
     "url": "images/snippets/user-interfaces/trip-review.jpg",
     "categories": ["User Interfaces"]
   },
   {
-    "url": "images/snippets/user-interfaces/wedding-app.jpg",
+    "url": "images/snippets/user-interfaces/tonsser.jpg",
     "categories": ["User Interfaces"]
   },
   {
-    "url": "images/snippets/graphic-design/artemis-1.jpg",
+    "url": "images/snippets/graphic-design/michael-jordan.jpg",
     "categories": ["Graphic Design"]
+  },
+  {
+    "url": "images/snippets/graphic-design/fui-hud.jpg",
+    "categories": ["Graphic Design"]
+  },
+  {
+    "url": "images/snippets/web-design/braun-loader.jpg",
+    "categories": ["Web Design"]
+  },
+  {
+    "url": "images/snippets/web-design/braun-product.jpg",
+    "categories": ["Web Design"]
+  }, 
+  {
+    "url": "images/snippets/graphic-design/artemis.jpg",
+    "categories": ["Graphic Design"]
+  },
+  {
+    "url": "images/snippets/user-interfaces/wedding-app.jpg",
+    "categories": ["User Interfaces"]
   },    
   {
-    "url": "images/snippets/graphic-design/braun-1.jpg",
+    "url": "images/snippets/user-interfaces/audio-guide.jpg",
+    "categories": ["User Interfaces"]
+  },
+  {
+    "url": "images/snippets/graphic-design/jt-typography.jpg",
     "categories": ["Graphic Design"]
+  },  
+  {
+    "url": "images/snippets/illustration/stratocaster-custom.jpg",
+    "categories": ["Illustration"]
+  },
+  {
+    "url": "images/snippets/illustration/stratocaster-tom.jpg",
+    "categories": ["Illustration"]
+  },
+  {
+    "url": "images/snippets/illustration/les-paul-slash.jpg",
+    "categories": ["Illustration"]
+  },
+  {
+    "url": "images/snippets/illustration/prs-silver-sky.jpg",
+    "categories": ["Illustration"]
+  },
+  {
+    "url": "images/snippets/illustration/2049.jpg",
+    "categories": ["Illustration"]
+  },
+  {
+    "url": "images/snippets/illustration/astrl.jpg",
+    "categories": ["Illustration"]
   }
 ]
