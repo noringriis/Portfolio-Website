@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const carouselInner = document.querySelector('#heroCarousel .carousel-inner');
     const imageFolder = 'images/carousels/hero/';
     const imagePrefix = 'image';
-    const imageExtension = '.jpg';
+    const imageExtension = '.webp';
     const numberOfImages = 6; // Set this to the number of images in your images/carousels/hero/ folder
 
     // Function to create carousel items

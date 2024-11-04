@@ -1,66 +1,66 @@
 [
   {
-    "url": "images/snippets/user-interfaces/trip-review.jpg",
+    "url": "images/snippets/user-interfaces/trip-review.webp",
     "categories": ["User Interfaces"]
   },
   {
-    "url": "images/snippets/user-interfaces/tonsser.jpg",
+    "url": "images/snippets/user-interfaces/tonsser.webp",
     "categories": ["User Interfaces"]
   },
   {
-    "url": "images/snippets/graphic-design/michael-jordan.jpg",
+    "url": "images/snippets/graphic-design/michael-jordan.webp",
     "categories": ["Graphic Design"]
   },
   {
-    "url": "images/snippets/graphic-design/fui-hud.jpg",
-    "categories": ["Graphic Design"]
-  },
-  {
-    "url": "images/snippets/web-design/braun-loader.jpg",
+    "url": "images/snippets/web-design/braun-loader.webp",
     "categories": ["Web Design"]
   },
   {
-    "url": "images/snippets/web-design/braun-product.jpg",
+    "url": "images/snippets/web-design/braun-product.webp",
     "categories": ["Web Design"]
   }, 
   {
-    "url": "images/snippets/graphic-design/artemis.jpg",
+    "url": "images/snippets/graphic-design/visvim.webp",
     "categories": ["Graphic Design"]
   },
   {
-    "url": "images/snippets/user-interfaces/wedding-app.jpg",
+    "url": "images/snippets/graphic-design/artemis.webp",
+    "categories": ["Graphic Design"]
+  },
+  {
+    "url": "images/snippets/user-interfaces/wedding-app.webp",
     "categories": ["User Interfaces"]
   },    
   {
-    "url": "images/snippets/user-interfaces/audio-guide.jpg",
+    "url": "images/snippets/user-interfaces/audio-guide.webp",
     "categories": ["User Interfaces"]
   },
   {
-    "url": "images/snippets/graphic-design/jt-typography.jpg",
+    "url": "images/snippets/graphic-design/jt-typography.webp",
     "categories": ["Graphic Design"]
   },  
   {
-    "url": "images/snippets/illustration/stratocaster-custom.jpg",
-    "categories": ["Illustration"]
+    "url": "images/snippets/illustration/stratocaster-custom.webp",
+    "categories": ["Illustrations"]
   },
   {
-    "url": "images/snippets/illustration/stratocaster-tom.jpg",
-    "categories": ["Illustration"]
+    "url": "images/snippets/illustration/stratocaster-tom.webp",
+    "categories": ["Illustrations"]
   },
   {
-    "url": "images/snippets/illustration/les-paul-slash.jpg",
-    "categories": ["Illustration"]
+    "url": "images/snippets/illustration/les-paul-slash.webp",
+    "categories": ["Illustrations"]
   },
   {
-    "url": "images/snippets/illustration/prs-silver-sky.jpg",
-    "categories": ["Illustration"]
+    "url": "images/snippets/illustration/prs-silver-sky.webp",
+    "categories": ["Illustrations"]
   },
   {
-    "url": "images/snippets/illustration/2049.jpg",
-    "categories": ["Illustration"]
+    "url": "images/snippets/illustration/2049.webp",
+    "categories": ["Illustrations"]
   },
   {
-    "url": "images/snippets/illustration/astrl.jpg",
+    "url": "images/snippets/illustration/astrl.webp",
     "categories": ["Illustration"]
   }
 ]

@@ -445,3 +445,24 @@ a:hover {
 .cover:hover {
     cursor: pointer;
 }
+
+/* Add these styles for the Driversnote modal content */
+#driversnoteContent {
+    padding: 0 20px;
+}
+
+#driversnoteContent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+/* Fix the nested modal-content issue */
+#driversnoteContent.modal-content {
+    max-height: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
