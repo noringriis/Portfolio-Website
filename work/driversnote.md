@@ -1,4 +1,4 @@
-![Driversnote](images/snippets/user-interfaces/trip-review.jpg "Driversnote")
+![Driversnote](images/snippets/user-interfaces/trip-review.webp "Driversnote")
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet efficitur imperdiet. Donec mollis ullamcorper est sed hendrerit. Quisque scelerisque dictum elit, nec luctus est vestibulum nec. Suspendisse commodo elementum risus, id lobortis felis finibus quis. Vivamus arcu lacus, aliquam vitae eros convallis, convallis ullamcorper risus. Nulla maximus sapien tellus, a facilisis lorem sollicitudin eu. Etiam vel metus at nulla efficitur egestas sed at lectus.
 
