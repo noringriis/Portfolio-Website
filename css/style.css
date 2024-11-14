@@ -466,3 +466,14 @@ a:hover {
     padding: 0;
 }
 
+/* Modal header layout styles */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-header .logo-title-group {
+    display: flex;
+    align-items: center;
+} 
