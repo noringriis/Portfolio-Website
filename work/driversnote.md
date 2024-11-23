@@ -1,11 +1,3 @@
 ![Driversnote](images/work/driversnote/dn-app-1.webp "Driversnote")
 ![Driversnote](images/work/driversnote/dn-app-2.webp "Driversnote")
 ![Driversnote](images/work/driversnote/dn-web-1.webp "Driversnote")
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet efficitur imperdiet. Donec mollis ullamcorper est sed hendrerit. Quisque scelerisque dictum elit, nec luctus est vestibulum nec. Suspendisse commodo elementum risus, id lobortis felis finibus quis. Vivamus arcu lacus, aliquam vitae eros convallis, convallis ullamcorper risus. Nulla maximus sapien tellus, a facilisis lorem sollicitudin eu. Etiam vel metus at nulla efficitur egestas sed at lectus.
-
-Curabitur efficitur libero vel quam lacinia molestie vitae ac massa. Donec eget nisi dignissim, lacinia turpis in, efficitur nisi. Suspendisse faucibus justo eu rhoncus ornare. Vestibulum sed vulputate ante. Nulla sed interdum nulla. Nunc eleifend felis at dictum imperdiet. Aenean quam diam, ullamcorper nec ullamcorper vitae, vehicula ac urna.
-
-In hac habitasse platea dictumst. Donec vel ipsum consequat, facilisis enim ut, egestas turpis. Duis sodales consectetur leo nec vestibulum. Donec dictum sapien nec nisl consequat, vitae sollicitudin ipsum lobortis. Donec porttitor, est ac imperdiet volutpat, sem dui pretium libero, at semper elit tortor quis ante. Quisque venenatis tempus nisl. Quisque aliquam luctus nunc, vitae lacinia leo porttitor at. Aliquam arcu lectus, gravida eu tempus eu, accumsan et leo. Nullam vel mauris at sem tristique aliquet.
-
-Praesent felis enim, commodo et mauris eget, pulvinar euismod ante. Mauris et tellus volutpat, vulputate est maximus, tincidunt augue. Ut vitae cursus est. Praesent laoreet erat id risus tincidunt facilisis. Sed ullamcorper, purus in vehicula tempus, sem nunc laoreet sem, eu rutrum ligula nulla id quam. Curabitur porta, tellus non elementum convallis, mi ex venenatis nulla, varius sagittis nibh lacus et ipsum. Vestibulum cursus nunc eget nulla interdum, ut varius libero tempor. Duis ac tortor quis ante suscipit cursus. Nulla sagittis ut lectus in sodales. Phasellus lectus tortor, cursus eu euismod sed, ornare nec nisi. Nunc tincidunt eros eu neque tincidunt, vel tristique massa dignissim. Cras vitae sem lobortis, bibendum turpis at, tempus tortor.
