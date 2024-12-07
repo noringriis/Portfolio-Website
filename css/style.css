@@ -175,7 +175,7 @@ strong {
 .filter-buttons .btn:active,
 .filter-buttons .btn.active {
     background-color: white !important;
-    border: 2px solid #EAEAEA !important;
+    border: 1.5px solid #EAEAEA !important;
     color: #888888 !important; /* Muted color */
     font-family: 'Inter', sans-serif !important;
     font-weight: 400 !important;
@@ -457,7 +457,7 @@ a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    margin: 20px 0;
+    margin: 8px 0;
 }
 
 /* Fix the nested modal-content issue */
